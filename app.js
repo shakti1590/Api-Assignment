@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -8,7 +7,7 @@ const Ticket = require('./models/ticket');
 const app = express();
 app.use(bodyParser.json());
 app.use(expressMongoSanitize());
-const databaseURI = 'mongodb+srv://ssingh12102002:shakti1234@ticket.frfxchp.mongodb.net/?retryWrites=true&w=majority'; // Replace 'tambula' with your desired database name
+const databaseURI = 'mongodb+srv://ssingh12102002:shakti1234@ticket.frfxchp.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(databaseURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
